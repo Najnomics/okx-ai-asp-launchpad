@@ -11,6 +11,13 @@ It outputs an MCP wrapper, A2MCP endpoint skeleton, listing copy, pricing recomm
 - Core value: helps more builders become OKX.AI ASPs quickly
 - Demo target: upload a simple script and generate a ready-to-register ASP project
 
+Hackathon notes:
+
+- Campaign: OKX.AI Genesis, part of the X Layer Build X series.
+- Build goal: create an Agent Service Provider that solves a clear real-world use case.
+- Submission flow: list the ASP on OKX.AI, post a short X walkthrough with `#OKXAI`, then submit the project form before the deadline.
+- Official context: https://www.okx.com/xlayer/build-x-hackathon
+
 ## Problem
 
 Many builders have useful scripts, APIs, or workflows, but packaging them as paid ASPs takes too long. The hackathon rewards live, useful services, so teams need a faster route from raw capability to listed ASP.
@@ -69,4 +76,3 @@ Builder
 ## Status
 
 Hackathon planning repository. Implementation scaffold will add the analyzer, FastAPI template, generator, and readiness checker.
-
