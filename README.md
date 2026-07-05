@@ -68,6 +68,36 @@ Builder
 
 - `spec.md` - full product and technical specification
 - `README.md` - project overview and hackathon framing
+- `app/` - FastAPI service implementation
+- `tests/` - API tests
+- `Dockerfile` - production container
+- `okx-ai-listing.md` - marketplace listing draft
+- `DEMO_SCRIPT.md` - 90-second walkthrough script
+
+## Run Locally
+
+```bash
+uv run uvicorn app.main:app --reload
+```
+
+Then open:
+
+- API docs: `http://127.0.0.1:8000/docs`
+- MCP-style manifest: `http://127.0.0.1:8000/mcp`
+- Demo payloads: `http://127.0.0.1:8000/demo`
+
+## Test
+
+```bash
+uv run --extra dev pytest
+```
+
+## Production Notes
+
+- Set `LAUNCHPAD_API_KEY` before exposing paid endpoints.
+- Deploy behind HTTPS before OKX.AI registration.
+- Use `LAUNCHPAD_DATA_DIR` for persistent project/report storage.
+- Generated scaffolds should be reviewed before production deployment.
 
 ## Contributor
 
@@ -75,4 +105,4 @@ Builder
 
 ## Status
 
-Hackathon planning repository. Implementation scaffold will add the analyzer, FastAPI template, generator, and readiness checker.
+Production-shaped MVP: analyzer, scaffold generator, listing generator, readiness checker, persistence, tests, Dockerfile, listing copy, and demo script are implemented.
