@@ -102,6 +102,7 @@ uv run --extra dev pytest
 ## Contributor
 
 - eosadolor382@gmail.com
+- @Ikpia
 
 ## Status
 
